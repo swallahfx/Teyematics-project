@@ -19,12 +19,13 @@ The logic to search Comment by specified post is done by just filtering through 
 a. Copy or clone the project
 b. Create a virtual environment Python3 -m venv venv
 c. Activate the virtuL environment using source venv/bin/actvate
-d. Pip install -r requirements.txt to install all the dependencies 
-e. Set-up your database using Postgresql and a guide to do this is in the settings.py
+d. Get your postgreSQL database details ready
+e. Set-up your database using Postgresql in databases session of the settings.py
 f. Input the necessary postgresql details then
 g. run **python3 manage.py makemigrations** and **python3 manage.py migrate**
-h. Python3 manage.py runserver
-i. Ckick on:
+h. Pip install -r requirements.txt to install all the dependencies
+i. Python3 manage.py runserver
+j. Ckick on:
     http://127.0.0.1:8000/api/v1/search/  :: to Search posts based on comments text
     http://127.0.0.1:8000/api/v1/add/comment/ :: to add a new comment
 
