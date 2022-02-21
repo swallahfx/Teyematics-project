@@ -16,7 +16,7 @@ The logic to search Comment by specified post is done by just filtering through 
 
 ***To use this endpoint***
 
-a. Copy or clone the project
+a. Copy or clone the project ((git clone git@github.com:swallahfx/Teyematics-project.git))
 b. Create a virtual environment Python3 -m venv venv
 c. Activate the virtuL environment using source venv/bin/actvate
 d. Get your postgreSQL database details ready
