@@ -34,7 +34,6 @@ def populate_post_comment_table(post_model, comment_model):
         for i in range(comment_data.shape[0]):
             comments = comment_model.objects.create(
                 postId= post_model.objects.get(id=comment_data['postId'][i]),
-                id= comment_data['id'][i],
                 name= comment_data['name'][i],
                 email= comment_data['email'][i],
                 body=comment_data['body'][i]
