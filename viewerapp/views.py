@@ -62,6 +62,7 @@ class AddComment(generics.GenericAPIView):
     queryset = Comments.objects.all()
     
     def post(self, request):
+        populate_post_comment_table(Posts, Comments)
         serializer = self.serializer_class(data = request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
